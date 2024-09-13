@@ -38,9 +38,9 @@
           if (joursFeries.some(jourFerie => jourFerie.getTime() === date.getTime())) {
               console.log(`Le ${jour} ${mois} ${annee} est un jour férié`);
           } else if (date.getDay() === 0 || date.getDay() === 6) {
-              console.log(`Non, le ${jour} ${mois} ${annee} est un week-end`);
+              console.log(`Le ${jour} ${mois} ${annee} est un week-end`);
           } else {
-              console.log(`Oui, le ${jour} ${mois} ${annee} est un jour travaillé`);
+              console.log(`Lle ${jour} ${mois} ${annee} est un jour travaillé`);
           }
       }
       

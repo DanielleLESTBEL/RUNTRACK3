@@ -9,7 +9,7 @@
 </head>
 <body>
    
-<script src="script.js"></script>
+<script src="script.js?v=1.0"></script>
 
 </body>
 </html>
