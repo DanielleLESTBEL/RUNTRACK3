@@ -40,7 +40,7 @@
           } else if (date.getDay() === 0 || date.getDay() === 6) {
               console.log(`Le ${jour} ${mois} ${annee} est un week-end`);
           } else {
-              console.log(`Lle ${jour} ${mois} ${annee} est un jour travaillé`);
+              console.log(`Le ${jour} ${mois} ${annee} est un jour travaillé`);
           }
       }
       
