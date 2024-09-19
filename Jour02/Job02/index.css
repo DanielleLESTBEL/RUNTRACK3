@@ -1,0 +1,20 @@
+#button {
+    
+    margin-top: 3vw;
+    padding: 3vw;
+    background-color: #0dee1f;
+    border: 2px solid #f8f408;
+    font-size: 3vw;
+    font-family: Geneva, Verdana, sans-serif;
+    color: darkblue;
+}
+
+body {
+    background-color: #a153eb;
+    font-family: Geneva, Verdana, sans-serif;
+    color: darkblue;
+}
+
+#article {
+    display: none;
+}
