@@ -1,13 +1,37 @@
+/*const textarea = document.getElementById("keylogger");
 
-var compteur = 0;
-var button = document.getElementById("button");
+document.addEventListener("toucheappui", function(event) {
+   var lettre = event.key;
+   
+   console.log("toucheappui :" + lettre);
 
-function addone() {
-   compteur++;
-   document.getElementById("compteur").textContent = compteur;
+   if (lettre.match(/[a-z]/i)) {
+      
+      if (document.activeElement === textarea) {
+         textarea.value += lettre + lettre;
+      } else {
+         textarea.value += lettre;
+      }
+         
+   }
+   
+});
+*/
 
-   console.log(compteur);
-}
+const keylogger = document.getElementById("keylogger");
 
+document.addEventListener('keydown', function(event) {
+    const char = String.fromCharCode(event.charcode);
 
-button.addEventListener('click', addone);
+    console.log(char); 
+
+    if (/[a-z]/i.test(char)) {
+        keylogger.value += char + char;
+
+        console.log(keylogger.value += char + char);
+    } else {
+        keylogger.value += char;
+        console.log(keylogger.value += char);
+    } 
+    
+});
