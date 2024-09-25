@@ -1,17 +1,22 @@
+// On définit la séquence du code Konami (les codes des touches)
+const konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
-var footer = document.getElementById("footer"); // je récupère la valeur de la variable "footer" (dans la page HTML) par son id
+// Tableau pour stocker les touches appuyées
+let userInput = [];
 
-// Fonction pour changer la couleur du footer en fonction du pourcentage de scroll
-window.addEventListener("scroll", function() {
-    // Hauteur totale du document moins la hauteur visible (viewport)
-    var scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
-console.log(scrollTotal);
-    // Position actuelle de défilement
-    var scrollPosition = window.scrollY;
+// Écouteur d'événement pour les touches du clavier
+window.addEventListener('keydown', function(event) {
+    // On récupère le code de la touche pressée
+    userInput.push(event.keyCode);
 
-    // Calcul du pourcentage de scroll
-    var scrollPourcentage = (scrollPosition / scrollTotal) * 100;
+    // On ne garde que les 10 dernières touches
+    if (userInput.length > 10) {
+        userInput.shift();
+    }
 
-    // On change la couleur du footer en fonction du pourcentage de scroll
-    footer.style.backgroundColor = `hsl(${scrollPourcentage}, 100%, 50%)`;
+    // Vérifier si le code entré correspond au code Konami
+    if (userInput.toString() === konamiCode.toString()) {
+        // Ajouter la classe 'konami-mode' au body pour changer le style
+        document.body.classList.add('konami-mode');
+    }
 });
