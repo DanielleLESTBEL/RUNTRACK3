@@ -1,21 +1,20 @@
 body {
     background-color: #a153eb;
     font-family: Geneva, Verdana, sans-serif;
+    color: darkblue;
+    text-align: center;
     padding: 0;
     margin: 0;
-    color: darkblue;
-    transition: all 0.5s;
 }
 
 
-
-body.plateforme-mode {
+/* Style spécial après le code Konami */
+body.konami-mode {
     background-color: #0056b3; /* Couleur bleu La Plateforme_ */
     color: white;
 }
 
 h1 {
-    text-align: center;
     margin-top: 80px;
     font-size: 6vw;
 }

@@ -13,7 +13,7 @@
 
 
 
-    <footer id="footer"><p>Je  change de couleur ;-))</p></footer>
+    <footer id="footer"><p>Je change de couleur ;-))</p></footer>
 
     <script src="script.js?v=<?php echo time(); ?>"></script>
 

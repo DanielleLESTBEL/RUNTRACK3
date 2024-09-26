@@ -1,22 +1,27 @@
-// On définit la séquence du code Konami (les codes des touches)
-const konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+let konamiIndex = 0;
 
-// Tableau pour stocker les touches appuyées
-let userInput = [];
+console.log(konamiCode);
 
-// Écouteur d'événement pour les touches du clavier
-window.addEventListener('keydown', function(event) {
-    // On récupère le code de la touche pressée
-    userInput.push(event.keyCode);
-
-    // On ne garde que les 10 dernières touches
-    if (userInput.length > 10) {
-        userInput.shift();
+document.addEventListener('keydown', function(touche) {
+    if (touche.key === konamiCode[konamiIndex]) {
+        konamiIndex++;
+        if (konamiIndex === konamiCode.length) {
+            activateMagic();
+            konamiIndex = 0;
+        }
+    } else {
+        konamiIndex = 0;
     }
-
-    // Vérifier si le code entré correspond au code Konami
-    if (userInput.toString() === konamiCode.toString()) {
-        // Ajouter la classe 'konami-mode' au body pour changer le style
-        document.body.classList.add('konami-mode');
-    }
+    console.log(touche);
 });
+
+function activateMagic() {
+    document.body.classList.add('plateforme');
+    let message = document.createElement('h2');
+    message.textContent = "Bienvenue dans les couleurs de la Plateforme_ !";
+    document.body.appendChild(message);
+
+    console.log(activateMagic);
+}
+
