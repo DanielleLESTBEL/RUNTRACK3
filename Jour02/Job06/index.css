@@ -9,9 +9,10 @@ body {
 
 
 
-body.plateforme-mode {
-    background-color: #0056b3; /* Couleur bleu La Plateforme_ */
+body.plateforme {
+    background-color: #0056b3; /* Couleur bleu de La Plateforme */
     color: white;
+    text-align: center;
 }
 
 h1 {

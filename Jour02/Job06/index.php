@@ -10,10 +10,7 @@
 </head>
 <body>
     <h1> Konami style... </h1>
-
-
-
-    
+ 
 
     <script src="script.js?v=<?php echo time(); ?>"></script>
 

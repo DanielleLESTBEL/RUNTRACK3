@@ -13,13 +13,13 @@ document.addEventListener('keydown', function(touche) {
     } else {
         konamiIndex = 0;
     }
-    console.log(touche);
+    console.log(konamiIndex);
 });
 
 function activateMagic() {
     document.body.classList.add('plateforme');
     let message = document.createElement('h2');
-    message.textContent = "Bienvenue dans les couleurs de la Plateforme_ !";
+    message.textContent = "Bienvenue dans les couleurs de la Plateforme !";
     document.body.appendChild(message);
 
     console.log(activateMagic);
