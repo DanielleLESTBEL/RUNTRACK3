@@ -1,0 +1,40 @@
+#citation {
+  border-radius: 3%;
+  border-color: brown;
+  font-size: 4vw;
+  font-family: Geneva, Verdana, sans-serif;
+  color: #0dee1f;
+  font-style: italic;
+  display: none;
+}
+
+body {
+  background-color: #c05fa0;
+  font-family: Geneva, Verdana, sans-serif;
+  color: darkblue;
+  margin: 30vw;
+  text-align: center;
+  
+}
+
+#article {
+  display: none;
+}
+
+#showQuote {
+  background-color: rgb(172, 10, 10);
+  color: bisque;
+  padding-block: 2.5vw;
+  border-radius: 6%;
+  border-color: bisque;
+  cursor:grab;
+}
+
+#hideQuote {
+  background-color: bisque;
+  color: rgb(172, 10, 10);
+  padding-block: 2.5vw;
+  border-radius: 6%;
+  border-color: rgb(172, 10, 10);
+  cursor:grabbing;
+}

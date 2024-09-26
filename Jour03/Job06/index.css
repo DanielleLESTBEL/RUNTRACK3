@@ -1,0 +1,22 @@
+body {
+    background-color: #a153eb;
+    font-family: Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: darkblue;
+    transition: all 0.5s;
+}
+
+
+
+body.plateforme {
+    background-color: #0056b3; /* Couleur bleu de La Plateforme */
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 6vw;
+}
