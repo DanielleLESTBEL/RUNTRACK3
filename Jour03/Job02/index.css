@@ -1,0 +1,38 @@
+#pictures {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin: 1.2px;
+  cursor: grab;
+}
+
+body {
+  background-color: #c05fa0;
+  font-family: Geneva, Verdana, sans-serif;
+  color: darkblue;
+  margin: 30vw;
+  text-align: center;
+}
+
+#mixItems {
+  background-color: rgb(172, 10, 10);
+  color: bisque;
+  padding: 2vw;
+  border-radius: 6%;
+  border-color: bisque;
+  cursor: grab;
+}
+
+#checkResult {
+  background-color: bisque;
+  color: rgb(172, 10, 10);
+  padding: 2vw;
+  border-radius: 6%;
+  border-color: rgb(172, 10, 10);
+  cursor: grabbing;
+}
