@@ -1,10 +1,26 @@
 
-const showButton = document.getElementById('showQuote');
-const hideButton = document.getElementById('hideQuote');
-const citation = document.getElementById('citation');
+const shuffling = document.getElementById('mixItems');
+const results = document.getElementById('checkResult');
+/*const citation = document.getElementById('citation'); */
+
+function shufflePictures() {
+    ;
+}
+
+function verifyOrder() {
+    ;
+}
 
 
-showButton.addEventListener('click', function() {
+
+
+
+
+
+
+
+
+/*showButton.addEventListener('click', function() {
     citation.style.display = 'block';  
 });
 
@@ -12,4 +28,4 @@ hideButton.addEventListener('click', function() {
     citation.style.display = 'none';
 });
 
-console.log()
+console.log() */
